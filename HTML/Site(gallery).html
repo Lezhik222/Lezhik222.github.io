@@ -4,64 +4,73 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KURS</title>
-        <link rel="stylesheet" href="Site/CSS/main.css">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() 
+            {$(window).scroll(function() 
+                {
+                    if($(this).scrollTop() != 0) 
+                        {$('#up').fadeIn();} 
+                    else 
+                        {$('#up').fadeOut();}
+                });
+                $('#up').click(function() 
+                {
+                    $('body,html').animate({scrollTop:0},700);
+                });
+            });
+  </script>
     </head>
     <style>
-        table { width: 100%; padding-top: 25px; padding-bottom: 50px; margin:auto;}
-        td, tr { padding: 10px;  text-align: center; }
+        table { width: 100%; padding-top: 1vw; padding-bottom: 15vw; margin:auto;}
+        td, tr { padding: 1vw;  text-align: center; }
     </style>
 
 <header>
 
     <div class ="logo">
-        <a href="Site(home).html"> <img src="Site/images/General/logo/logo_static.png" style="width:8.5vw;"></a>
-    </div>
-    <div class = "title">
-        <h1 >Portfolio</h1> 
-    </div>
-    <div class="Pages" >
-        <ul>
-          <li><a href="Site(gallery).html"> <h2>Portfolio</h2></a> </li>    
-          <li><a href="Site(about.me).html"><h2>About Me</h2></a> </li>    
-          <li><a href="Site(price).html"><h2>Price</h2></a> </li>    
-        </ul>
-      </div>
-      <div class="SocialNet">  
-        <a href="https://www.instagram.com/_lezhik_ph_/"> <img src="Site/images/General/SocialNet/Instagram.png" style="width: 5vw; "></a> 
-        <a href="https://www.facebook.com/profile.php?id=100004142117968"> <img src="Site/images/General/SocialNet/facebook.png"style="width: 5vw; "></a>
-        <a href="https://t.me/I_lezhik_I"> <img src="Site/images/General/SocialNet/telegram.png"style="width: 5vw;"></a>
-    </div>      
+        <a href="../index.html"> <img src="../images/General/logo/logo_static.png" style="width:8.5vw;"></a>
+      </div> 
+         <div class="title">
+           <h3> PHOTOGRAPHER / VIDEOGRAPHER</h3>
+           <h1> Oleg Petrov</h1>
+         </div>
+        
+         <div class="Pages" >
+          <ul>
+            <li><a href="Site(gallery).html"> <h2>Portfolio</h2></a> </li>    
+            <li><a href="Site(about.me).html"><h2>About Me</h2></a> </li>    
+            <li><a href="Site(price).html"><h2>Price</h2></a> </li>    
+          </ul>
+        </div>
+        <div class="SocialNet">  
+          <a href="https://www.instagram.com/_lezhik_ph_/"> <img src="../images/General/SocialNet/Instagram.png" style="width: 5vw; "></a> 
+          <a href="https://www.facebook.com/profile.php?id=100004142117968"> <img src="../images/General/SocialNet/facebook.png"style="width: 5vw; "></a>
+          <a href="https://t.me/I_lezhik_I"> <img src="../images/General/SocialNet/telegram.png"style="width: 5vw;"></a>
+      </div>     
 </header>
 <body>
-         <!--Preloader animation -->
-  
- <!-- <div id="loader"> 
-    <img src="Site/logo.gif" width="30%">
-  </div>
-  <script type="text/javascript">
-  var loader = document.getElementById("loader") ;
-  window.addEventListener("load", function(){
-    loader.style.height = "100px";
-    loader.style.width = "100px";
-    loader.style.borderRadius ="50%";
-    loader.style.visibility= "hidden";
-  } )
-  </script> --> 
         
 <table>
     <tr>
-        <td><img src = "Site/images/Gallery/3.jpg" height="500px"></td>
-        <td><img src = "Site/images/Gallery/IMG_5212.jpg" height="500px"></td>
-        <td><img src = "Site/images/Gallery/3_1.jpg"height="500px"></td>
+        <td><img src = "../images/Gallery/3.jpg" height="500vw"></td>
+        <td><img src = "../images/Gallery/IMG_5212.jpg" height="500vw"></td>
+        <td><img src = "../images/Gallery/3_1.jpg"height="500vw"></td>
     </tr>
     <tr>
-        <td><img src = "Site/images/Gallery/1.jpg" height="500px"></td>
-        <td><img src = "Site/images/Gallery/IMG_5128 с облаками.jpg" height="500px"></td>
-        <td><img src = "Site/images/Gallery/6.jpg" height="500px"></td>
+        <td><img src = "../images/Gallery/1.jpg" height="500vw"></td>
+        <td><img src = "../images/Gallery/IMG_5128 с облаками.jpg" height="500vw"></td>
+        <td><img src = "../images/Gallery/6.jpg" height="500vw"></td>
     </tr>
 </table> 
-
+   
+<div id="up" style="position:fixed; right: 3vw; top: 3vw;">
+    <img src="../images/General/up/up.png" width="70vw" >
+</div>
 </body>
+
 <footer>
     <h2 style="font-size: 1vw ; color: white; text-align: center;">© 2020. Oleg Petrov Prod. KHPI.</h2>
   </footer>
